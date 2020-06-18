@@ -1,2 +1,3 @@
-console.log(process.env.APP_NAME)
-console.log(process.env.NODE_ENV)
+process.argv.forEach((val, index)=>{
+	console.log(`${index}: ${val}`)
+})
