@@ -1,2 +1,4 @@
-const args = require('minimist')(process.argv.slice(2))
-console.log(args['name'])
+const x = 'x', y='y'
+console.log(x, y)
+
+console.log('My %s has %d years', 'cat', 2)
