@@ -1,13 +1,16 @@
-const name = 'Beny Hasanudin'
-const age = 36
-const weight = 58.9
+const x = 1
+const y = 2
+const z = 3
 
-const beny = {
-    name:name,
-    age:age,
-    weight:weight,
-    address: 'Harvest City Cluster Olive'
-}
-console.log('Hello my name is: %s, %d years old, weight %f', name, age, weight)
-console.log('beny object: %O',beny)
-console.log('%O', Number)
+console.count(
+  'The value of x is ' + x +
+  ' and has been checked .. how many times?'
+)
+console.count(
+  'The value of x is ' + x +
+  ' and has been checked .. how many times?'
+)
+console.count(
+  'The value of y is ' + y +
+  ' and has been checked .. how many times?'
+)
