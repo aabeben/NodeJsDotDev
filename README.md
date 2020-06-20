@@ -72,3 +72,11 @@ res.end('Hello World\n')
 ```
 
 ## Para Rangkakerja dan Alat-alat
+
+Node.js ialah sebuah platform tingkat-rendah. Ribuan pustaka-pustaka dibangun berdasarkan Node.js oleh komunitas yang bertujuan untuk mempermudah dan menyenangkan bagi pengembang dalam membuat sesuatu.
+
+Banyak daripadanya telah ada sebagai pilihan-pilihan terpopuler seiring waktu. Berikut ini ialah daftar yang tidak menyeluruh dari pilihan-pilihan tersebut di atas layak untuk dipelajari:
+* [**AdonisJs**](https://adonisjs.com): Sebuah rangkakerja yang fullstack fokus tertinggi pada ergonomik, stabilitas dan kepercayaan diri pengembang. Adonis merupakan salah satu rangkakerja-rangkakerja jejaring Node.js tercepat.
+* [**Express**](https://expressjs.com): Menyediakan salah satu dari jalan sangat sederhana namun berdaya untuk menciptakan sebuah server jejaring. Pendekatan minimalisnya, tidak dogmatis, terfokus pada fitur-fitur inti sebuah server, ialah kunci kesuksesannya.
+* [**Fastify**](https://fastify.io) Sebuah rangkakerja jejaring fokus tertinggi pada penyediaan pengalaman terbaik pengembang dengan biaya minim dan sebuah arsitektur plugin yang berdaya. Fastify ialah salah satu rangkakerja-rangkakerja jejaring Node.js tercepat.
+* [**hapi**](https://hapijs.com) Sebuah rangkakerja yang kaya untuk membangun aplikasi-aplikasi dan layanan-layanan yang mendayakan pengembang-pengembang untuk fokus pada menulis logika aplikasi yang dapat dipakai berulang-ulang ketimbang menghabiskan waktu membangun infrastruktur. 
