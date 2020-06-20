@@ -48,7 +48,7 @@ Metode **`creatServer()`** **`http`** menciptakan sebuah server HTTP dan kembali
 
 Server disetel untuk mendengarkan pada port dan nama host tertentu. Ketika server telah siap, fungsi panggil-lagi dipanggil, dalam hal ini memberitahukan kita bahwa server sedang berlari.
 
-Kapanpun sebuah permintaan diterima, [**`event request`**](https://nodejs.org/api/http.html#http_event_request) dipanggil, sedang menyediakan dua buah objek: sebuah permintaan (sebuah objek [**`http.IncomingMessage`**](https://nodejs.org/api/http.html#http_class_http_incomingmessage)) dan sebuah jawaban (sebuah objek [**`http.ServerResponse`**](https://nodejs/api/http.html#http_class_http_serverresponse)).
+Kapanpun sebuah permintaan diterima, [**`event request`**](https://nodejs.org/api/http.html#http_event_request) dipanggil, sedang menyediakan dua buah objek: sebuah permintaan (sebuah objek [**`http.IncomingMessage`**](https://nodejs.org/api/http.html#http_class_http_incomingmessage)) dan sebuah jawaban (sebuah objek [**`http.ServerResponse`**](https://nodejs.org/api/http.html#http_class_http_serverresponse)).
 
 Dua objek itu adalah hal mendasar untuk menangani panggilan HTTP.
 
