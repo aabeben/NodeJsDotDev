@@ -3,8 +3,8 @@
 ## Perkenalan Node.js
 
 Daftar Isi
-* [ Jumlah pustaka yang sangat banyak ](#)
-* [ Contoh Aplikasi Node.js](#)
+* [ Jumlah pustaka yang sangat banyak ](#jumlah-pustaka-yang-sangat-banyak)
+* [ Contoh Aplikasi Node.js](#contoh-aplikasi-node.js)
 * [ Para rangkakerja dan alat-alat](#)
 
 Node.js adalah sebuah sumber-terbuka dan lingkungan waktulari JavaScript yang lintas-platform
@@ -19,3 +19,54 @@ Hal ini memungkinkan Node.js menangani ribuan koneksi secara bersamaan dengan sa
 
 Node.js mempunyai sebuah keunggulan yang khas karena jutaan pengembang frontend yang menulis JavaScript untuk peramban adalah dapat menulis kode di sisi server selain di sisi client tanpa keharusan untuk belajar bahasa pemrograman yang sama sekali berbeda sekarang.
 
+## Jumlah Pustaka Yang Sangat Banyak
+
+npm dengan struktur yang sederhana telah membantu membiakkan ekosistem Node.js, dan sekarang registri npm menaungi lebih dari 1.000.000 paket sumber-terbuka yang dapat anda gunakan secara gratis.
+
+## Contoh Aplikasi Node.js
+
+Contoh lazim Hello World versi Node.js ialah sebuah server jejaring:
+```javascript
+const hostname = '127.0.0.1'
+const port = process.env.PORT
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200
+  res.setHeader('Content-Type', 'text/plain')
+  res.end('Hello World!\n')
+})
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`)
+})
+``` 
+Kode ini pertama kali menyisipkan [module **http**](https://nodejs.org/api/http.html) Node.js.
+
+Node.js mempunyai sebuah pustaka standar yang luar biasa, termasuk dukungan kelas satu untuk jaringan.
+
+Metode **`creatServer()`** **`http`** menciptakan sebuah server HTTP dan kembali berserta hasilnya.
+
+Server disetel untuk mendengarkan pada port dan nama host tertentu. Ketika server telah siap, fungsi panggil-lagi dipanggil, dalam hal ini memberitahukan kita bahwa server sedang berlari.
+
+Kapanpun sebuah permintaan diterima, [**`event request`**](https://nodejs.org/api/http.html#http_event_request) dipanggil, sedang menyediakan dua buah objek: sebuah permintaan (sebuah objek [**`http.IncomingMessage`**](https://nodejs.org/api/http.html#http_class_http_incomingmessage)) dan sebuah jawaban (sebuah objek [**`http.ServerResponse`**](https://nodejs/api/http.html#http_class_http_serverresponse)).
+
+Dua objek itu adalah hal mendasar untuk menangani panggilan HTTP.
+
+Yang pertama menyediakan rincian permintaan. Pada contoh sederhana ini, tidak digunakan, tetapi anda dapat mengakses kepala-kepala permintaan dan data permintaan.
+
+Yang kedua digunakan untuk mengembalikan data ke si pemanggil.
+
+Pada kasus ini dengan:
+```javascript
+res.statusCode = 200
+```
+Kita menyetel properti statusCode ke nilai 200, untuk mengindikasikan sebuah jawaban yang sukses.
+
+Kita menyetel kepala Content-Type:
+```javascript
+res.setHeader('Content-Type', 'plain/text')
+```
+dan kita menutup jawaban, menambahkan isi sebagai sebuah argumen ke ``end()``:
+```javascript
+res.end('Hello World\n')
+```
