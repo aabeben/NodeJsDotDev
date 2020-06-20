@@ -13,7 +13,7 @@ Node.js melarikan mesin JavaScript V8, yakni inti dari Google Chrome, di luar br
 
 Sebuah aplikasi Node.js berlari di dalam sebuah proses tunggal, tanpa menciptakan sebuah thread yang baru untuk setiap permintaan. Node.js menyediakan serangkaian primitif I/O yang bersifat asinkronis di dalam pustaka standarnya yang mencegah kode JavaScript menghambat dan pada umumnya pustaka-pustaka di dalam Node.js ditulis menggunakan paradigma nirhambat, yang membuat prilaku menghambat adalah sebuat pengecualian ketimbang sebuah hal yang wajar.
 
-Ketika Node.js melakukan sebuah operasi I/O, seperti membaca dari jaringan, mengakses sebuah database atau sistem berkas, alih-alih menghambat thread dan membuang siklus CPU menunggu, Node.js akan melanjutkan operasi-operasi ketikan jawaban kembali.
+Ketika Node.js melakukan sebuah operasi I/O, seperti membaca dari jaringan, mengakses sebuah database atau sistem berkas, alih-alih menghambat thread dan membuang siklus CPU menunggu, Node.js akan melanjutkan operasi-operasi ketika jawaban kembali.
 
 Hal ini memungkinkan Node.js menangani ribuan koneksi secara bersamaan dengan satu server tanpa menimbulkan beban untuk mengelola thread yang bersifat konkuren, yang mungkin saja adalah sebuah sumber bug-bug yang signifikan.
 
